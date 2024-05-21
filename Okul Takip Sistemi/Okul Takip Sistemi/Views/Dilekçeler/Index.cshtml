@@ -1,0 +1,163 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Left Align Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 200%; /* Genişliği artırmak için */
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #28A745;
+            color: white;
+        }
+
+        td {
+            background-color: #f2f2f2;
+        }
+
+        .table-container {
+            text-align: center; /* Tabloyu sola hizalamak için */
+        }
+
+        .table-wrapper {
+            display: flex; /* Tablonun sol hizalanması için */
+        }
+    </style>
+</head>
+<body>
+
+    <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 33px; font-weight: 700; letter-spacing: 0px; text-align: center; background-color: #68738C; padding: 20px; border-radius: 1px; display: inline-block;">
+        <a href="#" style="color:white; text-decoration: none;">Dilekçeler</a>
+    </h3>
+    <br />
+    <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-pbf-wrapper-full table-container">
+        <div class="row table-wrapper">
+            <table class="table table-bordered table-striped table-condensed mb-none">
+                <tr>
+                    <th style=" text-align: left; background-color: #28A745; color: white; padding: 15px;">Dosya Adı</th>
+                    <th style=" background-color: #17A2B8;"></th>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">Adres Beyan Dilekçesi.docx</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/Adres Beyan Dilekçesi.docx" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/Adres Beyan Dilekçesi.docx" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">Ders Muafiyet Dilekçesi.doc</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/Ders Muafiyet Dilekçesi.doc" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/Ders Muafiyet Dilekçesi.doc" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">Kayıt Dondurma Dilekçesi.doc</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/Kayıt Dondurma Dilekçesi.doc" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/Kayıt Dondurma Dilekçesi.doc" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">Mazeret Dilekçesi Önlisans.doc</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/Mazeret Dilekçesi Önlisans.doc" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/Mazeret Dilekçesi Önlisans.doc" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">Mazeret Dilekçesi Lisans.doc</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/Mazeret Dilekçesi Lisans.doc" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/Mazeret Dilekçesi Lisans.doc" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">Not İtiraz Dilekçesi.doc</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/Not İtiraz Dilekçesi.doc" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/Not İtiraz Dilekçesi.doc" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">Çift Ana Dal Dilekçesi.docx</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/Çift Ana Dal Dilekçesi.docx" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/Çift Ana Dal Dilekçesi.docx" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding:15px;">Önlisans Yan Dal Dilekçesi.docx</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/Önlisans Yan Dal Dilekçesi.docx" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/Önlisans Yan Dal Dilekçesi.docx" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">Lisans Yan Dal Dilekçesi.docx</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/Lisans Yan Dal Dilekçesi.docx" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/Lisans Yan Dal Dilekçesi.docx" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div style="border-top: 3px solid green;"></div>
+
+</body>
+</html>
+

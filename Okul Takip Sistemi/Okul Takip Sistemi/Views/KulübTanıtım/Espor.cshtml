@@ -1,0 +1,170 @@
+﻿@{
+    ViewBag.Title = "Espor";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Spor Kulübü</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFWPuVJTgH5VRXdr3OwMUSG1VARqzHDDVMIeNoQnc36w&s");
+            padding: 16px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .left-cell {
+            width: calc(50% - 10px);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .right-cell {
+            width: calc(50% - 10px);
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .vertical-line {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0; /* Değişiklik: Çizgilerin resimlerin solunda kalması sağlandı */
+            border-left: 2px solid #333;
+            height: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #FCC832 "><span style="color:red;">E</span><span style="color:white;">-</span><span style="color:orange;">S</span><span style="color:yellow;">P</span><span style="color:green;">O</span><span style="color:blue;">R </span><span style="color:azure;">K</span><span style="color:lemonchiffon;">U</span><span style="color:orangered;">L</span><span style="color:lightsteelblue;">Ü</span><span style="color:lawngreen;">B</span><span style="color:burlywood;">Ü</span></h1>
+    </header>
+    <div class="container">
+        <div class="left-cell">
+            <section id="ana-sayfa">
+                <h2>Hoş Geldiniz!</h2>
+                <p>E-Spor kulübümüze hoş geldiniz. Burada oyunlar, turnuvalar, etkinlikler ve daha fazlası hakkında bilgi bulabilirsiniz.</p>
+            </section>
+            <section id="turnuvalar">
+                <h2>Turnuvalar</h2>
+                <div class="form-group row">
+                    <div class="col-sm-12">
+                        <div class="alert alert-primary">
+                            <strong>Yakında!</strong>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="etkinlikler">
+                <h2>Etkinlikler</h2>
+                <p>
+                    Kulübün Geçmiş Etkinlikleri //
+                    Detaylı Bilgi İçin Resimlere Tıklayınız
+
+                    <br />
+                    <div style="display:flex; margin-bottom: 10px;">
+                        <img src="https://ari24.com/uploads/2021/02/601ed7646095a.jpeg" alt="turnuva 1" width="160" onclick="showDialog('Valorant Turnuvası\nBaşlangıç Tarihi: 14 Şubat 2021 17:00\nKonum: Online\nEtkinlik Türü: Yarışma')" style="cursor: pointer;" />
+                        <img src="https://ari24.com/uploads/2021/02/601ed7f32fb8b.jpeg" alt="turnuva 2" width="160" onclick="showDialog('League of Legends Turnuvası\nBaşlangıç Tarihi: 27 Aralık 2020 15:00\nKonum: Online\nEtkinlik Türü: Yarışma')" style="cursor: pointer;" />
+                        <img src="https://ari24.com/uploads/583dd1e6caf38.jpg" alt="turnuva 3" width="160" onclick="showDialog('XBOX ONE FİFA 17 Turnuvası\nBaşlangıç Tarihi: 5 Aralık 2016 09:30\nBitiş Tarihi: 5 Aralık 2016 17:30\nKonum: Youth Store\nEtkinlik Türü: Turnuva\nGiriş Bilgisi: Herkese Açık')" style="cursor: pointer;" />
+                    </div>
+
+                    <script>
+                    function showDialog(text) {
+                        alert(text);
+                    }
+                    </script>
+
+                    <div style="display:flex">
+                        <img src="https://ari24.com/uploads/58d0073eca159.jpg" alt="turnuva 4" width="160" onclick="showDialog('Hearhstone Çay Turnuvası Turnuvası\nBaşlangıç Tarihi: 25 Mart 2017 17:00\nBitiş Tarihi: 25 Mart 2017 17:00\nKonum: Kune Petro Cafe\nEtkinlik Türü: Turnuva\nGiriş Bilgisi: Herkese Açık')" style="cursor:pointer; " />
+                        <img src="https://ari24.com/uploads/5dfbe0b59b280.jpg" alt="turnuva 5" width="160" style="border: 3px solid black; " onclick="showDialog('İTÜ Gamenight #2\nBaşlangıç Tarihi: 21 Aralık 2019 21:30\nBitiş Tarihi: 22 Aralık 2019 05:00\nKonum: Estanbul Gaming Center\nEtkinlik Türü: Turnuva\nGiriş Bilgisi: Herkese Açık')" />
+                        <img src="https://ari24.com/uploads/2021/02/601ed8e2766ee.jpeg" alt="turnuva 6" width="160" onclick="showDialog('Valorant Turnuvası\nBaşlangıç Tarihi: 07 Kasım 2020 18:00\nKonum: Online\nEtkinlik Türü: Yarışma')" style="cursor:pointer;" />
+                    </div>
+
+
+                </p>
+            </section>
+            <section id="hakkımızda">
+                <h2>Hakkımızda</h2>
+                <p>
+                    <B>Amaç ve Kapsam</B> <br />
+                    Ortaya çıkışından itibaren hem ulusal hem de uluslararası düzeyde sosyal ve ekonomik olarak
+                    önlenemez bir yükseliş içerisinde olan E-Spor kavramı popülerliğinin yanı sıra ekonomik hacmi ve sahip
+                    olduğu pazar payı ile de önemli görülmektedir. Bunlara ek olarak E-Spor endüstrisinin önümüzdeki
+                    yıllarda da hızlı bir şekilde büyümeye devam edeceği ifade edilmektedir. Bu kapsamda E-Spor
+                    ekosistemi içerisinde sayısız unsur ile birlikte çok fazla sayıda paydaşın olduğu da ifade edilebilir. Bu
+                    unsurlarda en önemlileri ekonomi ve pazarlama süreçleri ile birlikte oyun yapımcıları, takımlar,
+                    oyuncular ve gerek ulusal gerekse de uluslararası düzeyde düzenlenen E-Spor etkinlikleri ve
+                    organizasyonlarıdır. Günümüzde hem ulusal hem de uluslararası birçok E-spor turnuvası
+                    düzenlenmekte, düzenlenen bu etkinlikler ve organizasyonlar milyonlarca birey tarafından yerinde
+                    veya sanal ortamda izlenmekte ya da takip edilmektedir. Buna bağlı olarak Esenyurt Üniversitesi
+                    E-Spor Kulübü olarak esas amacımız, Esenyurt Üniversitesine bağlı oyuncuları çeşitli iletişim
+                    ağları, etkinlikler ve turnuvalar aracılığı ile bir araya getirmek ve kulüp olarak Esenyurt
+                    Üniversitesini hem ulusal hem de uluslararası platformlarda temsil etmektir. <br />
+                    <B>Kulübün Faaliyet Alanları</B> <br />
+                    a. E-Spor ekosistemi, ürünleri ve benzer süreçler ile ilgili çeşitli organizasyonlar düzenlemek, katılmak ve
+                    ilgili etkinlikleri ulusal ve uluslararası düzeyde takip etmek, <br />
+                    b. E-Spor ekosistemi, ürünler ve benzer nitelikteki süreçlere yönelik olarak gerçekleştirilecek
+                    araştırmalara ve bilimsel çalışmalara destek sağlamak, <br />
+                    c. E-Spor ekonomisine ilişkin gerek ulusal gerekse de uluslararası paydaşlar (üniversiteler, kamu
+                    kuruluşları, özel kuruluşlar, yerel yönetimler vb.) ile işbirliği yapmak.
+                </p>
+            </section>
+            <section id="iletişim">
+                <h2>İletişim</h2>
+                <p>
+                    Bizimle iletişime geçmek için burayı kullanabilirsiniz.
+                    <br>
+                </p>
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <h4 class="sub-title">KULÜP BAŞKANI</h4>
+                        <h6>Öğr.Gör. Ozan ÇAPAN<br />ozanç@esenyurt.edu.tr  </h6>
+                    </div>
+                    <br /><br />
+                    <div class="col-sm-4">
+                        <h4 class="sub-title">KULÜP DANIŞMANI</h4>
+                        <h6>Öğr. Üyesi SALİM  SÜNER<br />salim.suner@esenyurt.edu.tr</h6>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="right-cell">
+            <img src="https://www.cumhuriyet.com.tr/Archive/2023/2/20/2053488/kapak_104425.jpg" alt="E-Spor Resmi" width="500">
+            <div class="vertical-line"></div>
+            <img src="https://playerbros.com/wp-content/uploads/2020/08/Oyun-Hizmetleri-Espor-Kul%C3%BCb%C3%BC-PUBG-Lite-Kadrosu.jpg" alt="E-Spor Turnuva Resmi" width="500">
+            <div class="vertical-line"></div>
+            <img src="https://tesfed.org.tr/uploads/news/news-68-tr.jpg" alt="E-Spor Etkinlik Resmi" width="500">
+            <div class="vertical-line"></div>
+            <img src="https://gamerbase.org/wp-content/uploads/2020/10/600px-BeyAz_at_eXTREMESLAND_2019.jpg" alt="E-Spor Resmii" width="500">
+            <div class="vertical-line"></div>
+            <img src="https://media.licdn.com/dms/image/C5612AQG8PZxMXZfNXA/article-cover_image-shrink_600_2000/0/1631342954874?e=2147483647&v=beta&t=nSwFb65CSgzRBKyUQHAbEFl1MWvESQsLaMhh_dxG6Lo" alt="E-Sporr Resmi" width="500">
+        </div>
+    </div>
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 20px;">
+        <p>&copy; 2024 E-Spor Kulübü. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
+

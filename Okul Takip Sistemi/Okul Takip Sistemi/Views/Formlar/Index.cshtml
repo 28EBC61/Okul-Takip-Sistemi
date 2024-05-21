@@ -1,0 +1,185 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Left Align Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 200%; /* Genişliği artırmak için */
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #28A745;
+            color: white;
+        }
+
+        td {
+            background-color: #f2f2f2;
+        }
+
+        .table-container {
+            text-align: center; /* Tabloyu sola hizalamak için */
+        }
+
+        .table-wrapper {
+            display: flex; /* Tablonun sol hizalanması için */
+        }
+    </style>
+</head>
+<body>
+
+    <h3 class="gdlr-core-blog-title gdlr-core-skin-title" style="font-size: 33px; font-weight: 700; letter-spacing: 0px; text-align: center; background-color: #68738C; padding: 20px; border-radius: 1px; display: inline-block;">
+        <a href="#" style="color:white; text-decoration: none;">Formlar</a>
+    </h3>
+    <br />
+    <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-pbf-wrapper-full table-container">
+        <div class="row table-wrapper">
+            <table class="table table-bordered table-striped table-condensed mb-none">
+                <tr>
+                    <th style=" text-align: left; background-color: #28A745; color: white; padding: 15px;">Dosya Adı</th>
+                    <th style=" background-color: #17A2B8;"></th>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">BAP Başvuru Formu.docx</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/FORM DOSYALARI/BAP Başvuru Formu.docx" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/FORM DOSYALARI/BAP Başvuru Formu.docx" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">Belge Başvuru Formu.pdf</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/FORM DOSYALARI/Belge Başvuru Formu.pdf" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/FORM DOSYALARI/Belge Başvuru Formu.pdf" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">ÇAP-YDP Başvuru Formu.pdf</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/FORM DOSYALARI/ÇAP-YDP Başvuru Formu.pdf" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/FORM DOSYALARI/ÇAP-YDP Başvuru Formu.pdf" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">İlişik Kesme - Kayıt Silme Talep Formu.pdf</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/FORM DOSYALARI/İlişik Kesme - Kayıt Silme Talep Formu.pdf" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/FORM DOSYALARI/İlişik Kesme - Kayıt Silme Talep Formu.pdf" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">Kurumiçi Yatay Geçiş Başvuru Formu.pdf</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/FORM DOSYALARI/Kurumiçi Yatay Geçiş Başvuru Formu.pdf" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/FORM DOSYALARI/Kurumiçi Yatay Geçiş Başvuru Formu.pdf" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">Öğrenci Bilgi Formu.pdf</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/FORM DOSYALARI/Öğrenci Bilgi Formu.pdf" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/FORM DOSYALARI/Öğrenci Bilgi Formu.pdf" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">Yabancı Uyruklu Öğrenci Bilgi Formu.pdf</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/FORM DOSYALARI/Yabancı Uyruklu Öğrenci Bilgi Formu.pdf" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/FORM DOSYALARI/Yabancı Uyruklu Öğrenci Bilgi Formu.pdf" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding:15px;">Kütüphane Kayıp Kitap Formu.pdf</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/FORM DOSYALARI/Kütüphane Kayıp Kitap Formu.pdf" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/FORM DOSYALARI/Kütüphane Kayıp Kitap Formu.pdf" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">Tek Ders Sınav Başvuru Formu.docx</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/FORM DOSYALARI/Tek Ders Sınav Başvuru Formu.docx" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/FORM DOSYALARI/Tek Ders Sınav Başvuru Formu.docx" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">Yatay Geçiş Başvuru Formu.pdf</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/FORM DOSYALARI/Yatay Geçiş Başvuru Formu.pdf" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/FORM DOSYALARI/Yatay Geçiş Başvuru Formu.pdf" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: left; padding: 15px;">Yatay Geçiş Başvuru Formu (Ek Madde-1).pdf</td>
+                    <td style="text-align: center;">
+                        <a href="~/Dosyalar/FORM DOSYALARI/Yatay Geçiş Başvuru Formu (Ek Madde-1).pdf" download class="btn btn-success btn-sm">
+                            <span class="fa fa-download"></span> İndir
+                        </a>
+                        <a href="~/Dosyalar/FORM DOSYALARI/Yatay Geçiş Başvuru Formu (Ek Madde-1).pdf" target="_blank" class="btn btn-info btn-sm">
+                            <span class="fa fa-eye"></span> Göster
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div style="border-top: 3px solid green;"></div>
+
+</body>
+</html>
+

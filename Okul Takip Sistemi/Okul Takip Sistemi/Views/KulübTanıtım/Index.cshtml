@@ -1,0 +1,190 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satranç Kulübü</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-image: url("https://img.pixers.pics/pho_wat(s3:700/FO/65/77/56/67/700_FO65775667_b2d2f7a8ad2e5fea98981c310b5cc68d.jpg,700,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,650,jpg)/cikartmalar-satranc-tahtasi-arka-plan.jpg.jpg");
+            color: #fff;
+            padding: 16px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .left-cell {
+            width: calc(50% - 10px);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .right-cell {
+            width: calc(50% - 10px);
+            padding: 20px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .vertical-line {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0; /* Değişiklik: Çizgilerin resimlerin solunda kalması sağlandı */
+            border-left: 2px solid #333;
+            height: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #FCC832 ">Satranç Kulübü</h1>
+    </header>
+    <div class="container">
+        <div class="left-cell">
+            <section id="ana-sayfa">
+                <h2>Hoş Geldiniz!</h2>
+                <p>Satranç kulübümüze hoş geldiniz. Burada satranç oyunuyla ilgili turnuvalar, etkinlikler ve daha fazlası hakkında bilgi bulabilirsiniz.</p>
+            </section>
+            <section id="turnuvalar">
+                <h2>Turnuvalar</h2>
+                <p>Yaklaşan turnuvalar ve geçmiş turnuvalar hakkında bilgi almak için burayı ziyaret edin.</p>
+            </section>
+            <section id="etkinlikler">
+                <h2>Etkinlikler</h2>
+                <p>
+                    Kulübümüzde düzenlenen etkinlikler hakkında bilgi almak için burayı ziyaret edin.
+                    <br />
+                    <table border="1">
+                        <thead>
+                            <tr style="background-color:darkslategray;">
+                                <th style="color:white;">Etkinlik</th>
+                                <th style="color:white;">Yer</th>
+                                <th style="color:white;">Başlangıç</th>
+                                <th style="color:white;">Bitiş</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>Türkiye Üniversiteler Satranç Şampiyonası</td>
+                                <td>Sivas</td>
+                                <td>13 Mayıs 2024</td>
+                                <td>17 Mayıs 2024</td>
+                            </tr>
+                            <tr>
+                                <td>2023-2024 Türkiye Okul Sporları Final Yarışması</td>
+                                <td>Rize</td>
+                                <td>13 Mayıs 2024</td>
+                                <td>17 Mayıs 2024</td>
+                            </tr>
+                            <tr>
+                                <td>Sharjah Ustalar Turnuvası</td>
+                                <td>Sharjah - BAE</td>
+                                <td>13 Mayıs 2024</td>
+                                <td>23 Mayıs 2024</td>
+                            </tr>
+                            <tr>
+                                <td>2023 - 2024 Türkiye Gençler Şampiyonası</td>
+                                <td>Samsun</td>
+                                <td>18 Mayıs 2024</td>
+                                <td>24 Mayıs 2024</td>
+                            </tr>
+                            <tr>
+                                <td>2023 - 2024 Türkiye Emektarlar Satranç Şampiyonası</td>
+                                <td>Ankara</td>
+                                <td>18 Mayıs 2024</td>
+                                <td>24 Mayıs 2024</td>
+                            </tr>
+                            <tr>
+                                <td>Atatürk'ü Anma, Gençlik ve Spor Bayramı</td>
+                                <td></td>
+                                <td>19 Mayıs 2024</td>
+                                <td>19 Mayıs 2024</td>
+                            </tr>
+                            <tr>
+                                <td>Avrupa Okullar Satranç Şampiyonası</td>
+                                <td>Limerick - İrlanda</td>
+                                <td>30 Mayıs 2024</td>
+                                <td>8 Haziran 2024</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </p>
+            </section>
+            <section id="hakkımızda">
+                <h2>Hakkımızda</h2>
+                <p>
+                    Kulübün Baş Antrenörü Öğr. Gör. Ozan ÇAPAN tarafından 6 yaşından itibaren sistemli bir biçimde verilen derslerin amacı ilk olarak satran­cı sevdirmek ve ilgi uyandırmaktır. Öğrenmeyi öğrenmek adına önemli adımlar atan öğrencilere eğlene­rek bilgi verilmesi ve disiplinli bir çalışma temposuyla satranç becerilerinin gelişmesi sağlanır. Bu noktada kulübümüzün en önemli özelliklerinden biri yeni başlayan ve satrancını geliştirmek isteyenlerden milli takım oyuncularına kadar her seviyeden oyuncunun kendi seviyesini geliştirdikleri Türkiye’nin bu kapsamdaki en sistemli satranç okulu olmasıdır. Her sene burada yetişen öğrenciler satranç oyununa merhaba diyerek Türk satranç altyapısına önemli bir katkı sağlamaktadır.
+
+                    Üniversitemizin Satranç Kulübünde programlar hafta içi akşam ve hafta sonu olmak üzere her öğrencin bil­gi düzeyine ve yaşına uygun olarak belirlenmiş ve sınıflar satranç seviyelere göre oluşturulmuştur. Her öğ­rencinin dikkatli bir biçimde takip edilmesi ve ihtiyacı olan ilgiyi görebilmesi için sınıflar satranç seviyeleri­ne ve yaş gruplarına göre en fazla 12 kişi olarak belirlenmektedir. Öğrenciler kendileri için en uygun ders saati ve gününü seçme olanağına sahiptirler.
+                    <br>
+                    <u>Misyonumuz :</u>
+                    Üniversitemiz Satranç Kulübü sporcularına, dürüstlük, sorumluluk, problem çözme, iletişim becerileri, her ne koşulda olursa olsun mücadele edebilme ve başarısızlıkta yılmama, işbirliği, eleştirel ve yaratıcı düşünce, kararlılık, kazancı ve yenilgiyi olağan karşılayabilme gibi “liderlik” için gereken beceri ve tutumların kazandırılmasına yönelik çalışmalar yapar.
+
+                    Sporcularımıza sadece satranç oyununun temel kuralları ve teknikleri dışında satranç oyununun içinde barındırdığı felsefesini de öğretmek amacımızdır. Bizler satrancı, çocuklarımızın kişiliklerine katkı sağlayacak bir araç olarak görürüz.
+
+                    Üniversitemiz Satranç Kulübü, olarak aynı zamanda kendimizi bir madenci gibi düşünürüz. İlgili ve yetenekli öğrenciyi bulup işleriz. Onların gelişimlerini görüp başarılarına katkı sağlamak kuruluş amacımızdır.
+                    <br>
+                    <u>Vizyonumuz :</u>
+                    Üniversitemizin Satranç Kulübü, çocuklarımızın satranç oyununu seven, oyunun kurallarını tamamıyla öğrenip, kendileriyle birlikte getirmiş oldukları yeteneklerini ortaya çıkartmalarına yardımcı olmaya çalışarak; gelişmelerine katkı sağlayıp Türk satrancına yeni ustalar kazandırmaktır.
+                </p>
+            </section>
+            <section id="iletişim">
+                <h2>İletişim</h2>
+                <p>
+                    Bizimle iletişime geçmek için burayı kullanabilirsiniz.
+                    <br>
+                </p>
+                <div class="form-group row">
+                    <div class="col-sm-4">
+                        <h4 class="sub-title">BAŞ ANTRANÖR</h4>
+                        <h6>Öğr.Gör. Ozan ÇAPAN<br />ozanç@esenyurt.edu.tr  </h6>
+                    </div>
+                    <br /><br />
+                    <div class="col-sm-4">
+                        <h4 class="sub-title">YARDIMCI ANTRANÖR</h4>
+                        <h6>Öğr. Üyesi SALİM  SÜNER<br />salim.suner@esenyurt.edu.tr</h6>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="right-cell">
+            <img src="https://www.murekkepokullari.com/files/IMG-4-318-1509787077.jpg" alt="Satranç Resmi" width="500">
+            <div class="vertical-line"></div>
+            <img src="https://ruhahaberajansi.com/wp-content/uploads/2019/06/3.jpg" alt="Satranç Turnuva Resmi" width="500">
+            <div class="vertical-line"></div>
+            <img src="https://img-c.udemycdn.com/course/750x422/1598008_7662_5.jpg" alt="Satranç Etkinlik Resmi" width="500">
+            <div class="vertical-line"></div>
+            <img src="https://static.wixstatic.com/media/11062b_41f910da9ee541f4a8d9f8fe15fa194d~mv2.jpg/v1/fill/w_640,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_41f910da9ee541f4a8d9f8fe15fa194d~mv2.jpg" alt="Satranç Hakkımızda Resmi" width="500">
+            <div class="vertical-line"></div>
+            <img src="https://satrancistanbul.com/wp-content/uploads/2021/04/kurumsal-satranc-dersleri-1024x576.jpg" alt="Satranç İletişim Resmi" width="500">
+        </div>
+    </div>
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 20px;">
+        <p>&copy; 2024 Satranç Kulübü. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>

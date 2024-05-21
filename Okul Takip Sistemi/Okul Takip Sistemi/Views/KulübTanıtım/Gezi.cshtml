@@ -1,0 +1,204 @@
+﻿@{
+    ViewBag.Title = "Gezi";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+<div style="background-image: url(https://www.indyturk.com/sites/default/files/styles/1368x911/public/article/main_image/2021/02/04/578531-2026990228.jpg?itok=AGueB8X6) ">
+    <br />
+    <h2 align="center" style="color:blueviolet"> Gezi Külübü </h2>
+    <br />
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gezi Kulübü - Etkinlikler</title>
+        <style>
+
+            .modal-bg {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 200%;
+                height: 800%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 1;
+            }
+
+
+            .modal-content {
+                display: none;
+                position: fixed;
+                top: 40%;
+                left: 63%;
+                transform: translate(-50%, -50%);
+                background-color: white;
+                padding: 1px;
+                border-radius: 20px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                z-index: 2;
+            }
+
+            /* Close button */
+            .close-btn {
+                position: absolute;
+                top: 10px;
+                right: 50px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+
+
+
+
+        <h2> Hoşgeldiniz..</h2>
+        <h4>
+            Gezi külübümüze hoşgeldiniz. Sizde birer Gezgincimisiniz ? O zaman doğru yerdesiniz,Hayalleriniz olan yerleri bize danışın biz karar verelim.
+
+        </h4>
+        <br />
+        <h2>   Kulübün Amacı </h2>
+        <h4>
+            Ülkemiz ve bölgemizdeki ortak mirası oluşturan pek çok kültürel değeri tanımak ve tanıtmak. Kulüp üyelerinin özellikle bölgemizin kültürel değerlerini fark etmeleri ve bu değerlere sahip çıkmalarını sağlamak. Ülkemizde sadece görsel kültürlerden ziyade tarihsel kültürlerin varlığını hissettirmek.
+
+
+        </h4>
+        <br />
+
+        <h2> Etkinlikler..</h2>
+        <div>
+
+            <h4 style="color:forestgreen">12-Nisan 09.00 Piknik Günü</h4>
+            <br />
+
+            <h4 style="color:crimson">18-Mart 06.00 Çanakkale Gezisi</h4>
+            <h6 style="color:aliceblue">Bu etkinlikte Çanakkale'nin tarihi ve doğal güzelliklerini keşfedeceğiz.</h6>
+            <button onclick="document.getElementById('modal-bg').style.display='block';document.getElementById('modal-content').style.display='block'">Çanakkale'yi Tanıt</button>
+            <div id="modal-bg" class="modal-bg" onclick="document.getElementById('modal-bg').style.display='none';document.getElementById('modal-content').style.display='none'"></div>
+            <div id="modal-content" class="modal-content">
+                <span class="close-btn" onclick="document.getElementById('modal-bg').style.display='none';document.getElementById('modal-content').style.display='none'">&times;</span>
+                <h2 style="text-align:center">Çanakkale</h2>
+                <p>
+                    Çanakkale, Türkiye’nin kuzeybatısında yer alan bir şehrimizdir. Marmara Bölgesi’nde ve Ege Denizi ile  Çanakkale Boğazı’nın kıyısında yer alır. Tarihi ve kültürel zenginlikleri ile önemli bir turizm merkezidir ve <br /> aynı zamanda Çanakkale’de gezilecek yerler sayısı oldukça fazladır.
+
+                    Özellikle I. Dünya Savaşı sırasında yaşanan Çanakkale Savaşı ile ünlenmiştir. Bu savaşta Osmanlı İmparatorluğu’nun, <br />İtilaf Devletleri’nin saldırılarına karşı büyük bir direniş göstermesi sonucunda zafer kazanılmıştır. Savaşın yapıldığı yerlerden biri olan Gelibolu Yarımadası’nda bulunan Anzak Koyu ve Conkbayırı gibi yerler, <br /> günümüzde turistlerin ziyaret ettiği en önemli turistik mekanlar arasındadır. <br /> <h4> Planlama</h4> Kalkış:06.00; Varış:10.30; çanakkaleyi gezme: 11-7 (içinde yemek dahil); Dönüs saati:20.00.
+                </p>
+                <br />
+
+            </div>
+            <h4 style="color:gold">10-Kasım 07.00 Anıtkabir Gezisi</h4>
+            <h6 style="color:aliceblue">Bu etkinlikte Türkiye Cumhuriyeti'nin kurucusu Mustafa Kemal Atatürk'ün anıt mezarını ziyaret edeceğiz.</h6>
+            <button onclick="document.getElementById('modal-bg-anitkabir').style.display='block';document.getElementById('modal-content-anitkabir').style.display='block'">Anıtkabir'i Tanıt</button>
+            <div id="modal-bg-anitkabir" class="modal-bg" onclick="document.getElementById('modal-bg-anitkabir').style.display='none';document.getElementById('modal-content-anitkabir').style.display='none'"></div>
+            <div id="modal-content-anitkabir" class="modal-content">
+                <span class="close-btn" onclick="document.getElementById('modal-bg-anitkabir').style.display='none';document.getElementById('modal-content-anitkabir').style.display='none'">&times;</span>
+                <h2>Anıtkabir</h2>
+                <p>Anıtkabir, Ankara'nın Çankaya ilçesinde yer alan ve Mustafa Kemal Atatürk'ün anıt mezarını içeren komplekstir. Emin Onat ile Orhan Arda'nın tasarımı olan Anıtkabir'in 1944'te başlanan inşası <br /> 1953'te tamamlanmıştır. Anıt mezar binası başta olmak üzere çeşitli yapı ve anıtların yanı sıra Barış Parkı olarak adlandırılan ağaçlık alandan oluşur.<br /> <h4> Planlama</h4> Saat:07.00 Kalkış ,12.00 ile 14.00 arası gezi ,15.00-16.00 yemek molası ,17.00-Dönüş saati </p>
+                <br />
+            </div>
+            <h4 style="color:darkblue"> 19-Mayıs Spor Bayramı-11.00</h4>
+            <h6 style="color:aliceblue"> Bu etkinlikte Öğrencilerimizle birlikte Basketbol izlemeye gidicez .</h6>
+            <button onclick="document.getElementById('modal-bg-basketbol').style.display='block';document.getElementById('modal-content-basketbol').style.display='block'">Basketbol Nedir?</button>
+            <div id="modal-bg-basketbol" class="modal-bg" onclick="document.getElementById('modal-bg-basketbol').style.display='none';document.getElementById('modal-content-basketbol').style.display='none'"></div>
+            <div id="modal-content-basketbol" class="modal-content">
+                <span class="close-btn" onclick="document.getElementById('modal-bg-basketbol').style.display='none';document.getElementById('modal-content-basketbol').style.display='none'">&times;</span>
+                <h2>Basketbol Nedir?</h2>
+                <p>Basketbol, iki takım arasında oynanan bir takım sporudur. Oyuncular, topu rakip takımın potasına atarak sayı kazanmaya çalışır. Basketbol, ABD'nin Massachusetts eyaletinde, Springfield Genç Hristiyan Erkekler <br /> Birliği (YMCA) Eğitim Okulunda beden eğitimi öğretmeni olan Kanadalı Dr. James Naismith tarafından 1891'de icat edilmiştir. Atlet ve beyzbolculara kış antrenmanı yaptırmak amacıyla geliştirilen bu oyunda <br /> amaç, tahtadan yapılmış altı kapalı şeftali sepetlerine futbol topunun sokulmasıydı. Basketbol sepeti yaklaşık 3 metre yükseklikte duvara monte ediliyordu ve her sayıdan sonra basketbol topu sepetten <br /> elle çıkarılıyordu. Zamanla sepetin altı çıkarıldı ve sayı olan ancak sepete takılan toplar bir değnekle itilerek çıkarılmaya başlandı.<br /> <h4> Planlama </h4>  Otobüs Kalkış:11.00  Maç Saati:13.00  Bitiş:14.30   Öğlen yemeği: 15.00   Dönüs :16.30</p>
+
+            </div>
+            <h4 style="color:aquamarine"> Turizm ve Gezi Kulübünün Amaçları ..</h4>
+            <h6 style="color:whitesmoke">
+
+                1- Turizm faaliyetlerini desteklemek ve bu faaliyetlere katılmak <br />
+                2- Turizm ve Otel İşletmeciliği bölümünü turizm endüstrisine ve diğer ilgili sektörlere tanıtmak <br />
+                3- Turizm sektörüyle ilgili çeşitli konferanslar, paneller, kongreler düzenlemek ve bu sektöre yardımcı olacak araştırmalar yürütmek <br />
+                4- Öğrencilerin boş zamanlarını gezi ve çeşitli sosyal etkinlikler düzenleyerek değerlendirmek <br />
+                5- Sosyal ve kültürel ilişkilerin geliştirilmesi <br />
+                6- Öğrenci kulüpler, mülki idareciler, yöneticiler ve çeşitli sivil toplum örgütleriyle ortak faaliyetler düzenlemek <br />
+                7- Eskişehir’in tanıtımına yardımcı olmak <br />
+                8- Görsel ve yazılı medya kuruluşları ile ilişkileri düzenlemek <br />
+                9- Üniversite-Sektör işbirliğini geliştirecek faaliyetlerde bulunmak <br />
+            </h6>
+            <hr style="width:500" />
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
+
+
+<div>
+
+
+
+    <h4 class="sub-title">KULÜP YÖNETİM VE İLETİŞİM BİLGİLERİ</h4>
+    <div class="form-group row">
+        <div class="col-sm-4">
+            <h4 class="sub-title">DANIŞMAN</h4>
+            Arş.Gör. Üyesi Mert Aksoy<br />Mertaksoyy@esenyurt.edu.tr
+        </div>
+
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-4">
+            <h4 class="sub-title">KULÜP BAŞKANI</h4>
+            Pelin Sarar<br />Pelinsarar@esenyurt.edu.tr<br />
+        </div>
+        <div class="col-sm-4">
+            <h4 class="sub-title">KULÜP BAŞKAN YARDIMCISI</h4>
+            Aleyna Sayın<br />AleynaSayın@esenyurt.edu.tr<br />
+        </div>
+
+    </div>
+    <hr />
+    <div class="form-group row">
+        <div class="col-sm-12">
+            <h4 class="sub-title">SIRADAKİ ETKİNLİK</h4>
+
+            <div class="alert alert-success " style="width:200px;height:50px">
+                <strong>Bilgi!</strong> Piknik Gezisi
+            </div>
+        </div>
+    </div>
+
+
+    <h4 class="sub-title">EN SON YAPILAN ETKİNLİK</h4>
+
+    <div class="form-group row">
+        <label class="col-sm-3 col-form-label"><strong>Etkinlik Tarihi</strong></label>
+        <div class="col-sm-9">07.02.2024 / 13:30-17:00</div>
+    </div>
+    <hr />
+    <div class="form-group row">
+        <label class="col-sm-3 col-form-label"><strong>Etkinlik Türü</strong></label>
+        <div class="col-sm-9">Eğitim,Eğlence</div>
+    </div>
+    <div class="form-group row">
+        <label class="col-sm-3 col-form-label"><strong>Yapılan Etkinlik</strong></label>
+        <div class="col-sm-9">TeknoFest Etkinliği</div>
+    </div>
+
+
+    <hr />
+
+
+
+</div>
+
+
+
+
+</div>
+
+

@@ -1,0 +1,90 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<center>
+    <video autoplay="" height="600" muted="" width="900"><source src="https://www.esenyurt.edu.tr/uploads/www/tanitim.mp4" type="video/mp4" /> <source src="movie.ogg" type="video/ogg" /></video>
+</center>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Okul Haberleri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+            .news-item:last-child {
+                border-bottom: none;
+            }
+
+        .news-title {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .news-date {
+            color: #888;
+        }
+
+        .news-content {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Okul Haberleri</h1>
+    </header>
+    <main>
+        <center>
+            <div class="news-item">
+                <h2 class="news-title"><U>Öğrenci Kulübü Etkinliği</U></h2>
+                <p class="news-date">7 Nisan 2024</p>
+                <h4 class="news-content">Bu haftasonu öğrenci kulübümüzün düzenlediği piknik etkinliği büyük ilgi gördü. Katılan herkese teşekkür ederiz.</h4>
+                <img src="https://www.esenyurt.edu.tr/Uploads/www/FotoGaleri/FotoGaleri206/image00006.jpeg" alt="" width="700" height="600">
+            </div>
+            <div class="news-item">
+                <h2 class="news-title"><U>Veri ve Yapay Zeka Okur Yazarlığı</U></h2>
+                <p class="news-date">15 Kasım 2023</p>
+                <h4 class="news-content">Dr. Öğr. Üyesi Merve Doğruel'in moderatörlüğünü yaptığı ve Prof. Dr. Seniye Ümit Fırat'ın konuk olduğu Veri ve Yapay Zeka Okuryazarlığı Semineri okulumuzda yapılmıştır.</h4>
+                <img src="https://www.esenyurt.edu.tr/Uploads/www/Etkinlikler/Buyuk/WhatsApp%20Image%202023-11-08%20at%2016.37.35.jpeg" alt="" width="700" height="600">
+            </div>
+            <div class="news-item">
+                <h2 class="news-title"><U>İstanbul'un Deprem Riski</U></h2>
+                <p class="news-date">1 Nisan 2024</p>
+                <h4 class="news-content">Jeofizik Yüksek Mühendisi Mustafa Serhat Durmuş, 1 Nisan Pazartesi günü İstanbuldaki deprem riskleri hakkında konuşacaktır.</h4>
+                <img src="https://www.esenyurt.edu.tr/Uploads/www/Etkinlikler/Buyuk/İstanbulun%20Deprem%20Riski-01.jpg" alt="" width="700" height="600">
+            </div>
+        </center>
+    </main>
+</body>
+</html>
+

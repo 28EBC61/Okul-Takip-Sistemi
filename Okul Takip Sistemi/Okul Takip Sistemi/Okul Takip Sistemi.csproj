@@ -121,7 +121,18 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AnaSayfaController.cs" />
+    <Compile Include="Controllers\DersProğramıController.cs" />
+    <Compile Include="Controllers\DilekçelerController.cs" />
+    <Compile Include="Controllers\FormlarController.cs" />
+    <Compile Include="Controllers\HaberlerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\KulübTanıtımController.cs" />
+    <Compile Include="Controllers\PuanveÜcretController.cs" />
+    <Compile Include="Dosyalar\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -191,6 +202,52 @@
     <Content Include="Web\Web\src\assets\demo\datatables-demo.js" />
     <Content Include="Web\Web\src\assets\img\error-404-monochrome.svg" />
     <Content Include="Web\Web\src\js\scripts.js" />
+    <Content Include="Dosyalar\OkulTakipSistemiWordDosyas.pdf" />
+    <Content Include="Dosyalar\91cabd16-9692-4405-899d-b8a854caaf68_1.pdf" />
+    <Content Include="Dosyalar\Programlama-Temelleri.pdf" />
+    <Content Include="Resources\91cabd16-9692-4405-899d-b8a854caaf68_1.pdf" />
+    <Content Include="Dosyalar\Adres Beyan Dilekçesi.docx" />
+    <Content Include="Dosyalar\Ders Muafiyet Dilekçesi.doc" />
+    <Content Include="Dosyalar\Kayıt Dondurma Dilekçesi.doc" />
+    <Content Include="Dosyalar\Lisans Yan Dal Dilekçesi.docx" />
+    <Content Include="Dosyalar\Mazeret Dilekçesi Lisans.doc" />
+    <Content Include="Dosyalar\Mazeret Dilekçesi Önlisans.doc" />
+    <Content Include="Dosyalar\Not İtiraz Dilekçesi.doc" />
+    <Content Include="Dosyalar\Çift Ana Dal Dilekçesi.docx" />
+    <Content Include="Dosyalar\Önlisans Yan Dal Dilekçesi.docx" />
+    <Content Include="Dosyalar\FORM DOSYALARI\BAP Başvuru Formu.docx" />
+    <Content Include="Dosyalar\FORM DOSYALARI\Belge Başvuru Formu.pdf" />
+    <Content Include="Dosyalar\FORM DOSYALARI\Kurumiçi Yatay Geçiş Başvuru Formu.pdf" />
+    <Content Include="Dosyalar\FORM DOSYALARI\Kütüphane Kayıp Kitap Formu.pdf" />
+    <Content Include="Dosyalar\FORM DOSYALARI\Tek Ders Sınav Başvuru Formu.docx" />
+    <Content Include="Dosyalar\FORM DOSYALARI\Yabancı Uyruklu Öğrenci Bilgi Formu.pdf" />
+    <Content Include="Dosyalar\FORM DOSYALARI\Yatay Geçiş Başvuru Formu %28Ek Madde-1%29.pdf" />
+    <Content Include="Dosyalar\FORM DOSYALARI\Yatay Geçiş Başvuru Formu.pdf" />
+    <Content Include="Dosyalar\FORM DOSYALARI\ÇAP-YDP Başvuru Formu.pdf" />
+    <Content Include="Dosyalar\FORM DOSYALARI\Öğrenci Bilgi Formu.pdf" />
+    <Content Include="Dosyalar\FORM DOSYALARI\İlişik Kesme - Kayıt Silme Talep Formu.pdf" />
+    <None Include="Resources\Adres Beyan Dilekçesi.docx" />
+    <None Include="Resources\BAP Başvuru Formu.docx" />
+    <None Include="Resources\Belge Başvuru Formu.pdf" />
+    <None Include="Resources\Ders Muafiyet Dilekçesi.doc" />
+    <None Include="Resources\Kayıt Dondurma Dilekçesi.doc" />
+    <None Include="Resources\Kurumiçi Yatay Geçiş Başvuru Formu.pdf" />
+    <None Include="Resources\Kütüphane Kayıp Kitap Formu.pdf" />
+    <None Include="Resources\Lisans Yan Dal Dilekçesi.docx" />
+    <None Include="Resources\Mazeret Dilekçesi Lisans.doc" />
+    <None Include="Resources\Mazeret Dilekçesi Önlisans.doc" />
+    <None Include="Resources\Not İtiraz Dilekçesi.doc" />
+    <None Include="Resources\OkulTakipSistemiWordDosyas.pdf" />
+    <Content Include="Resources\Programlama-Temelleri.pdf" />
+    <None Include="Resources\Tek Ders Sınav Başvuru Formu.docx" />
+    <None Include="Resources\Yabancı Uyruklu Öğrenci Bilgi Formu.pdf" />
+    <None Include="Resources\Yatay Geçiş Başvuru Formu %28Ek Madde-1%29.pdf" />
+    <None Include="Resources\Yatay Geçiş Başvuru Formu.pdf" />
+    <None Include="Resources\ÇAP-YDP Başvuru Formu.pdf" />
+    <None Include="Resources\Çift Ana Dal Dilekçesi.docx" />
+    <None Include="Resources\Önlisans Yan Dal Dilekçesi.docx" />
+    <None Include="Resources\Öğrenci Bilgi Formu.pdf" />
+    <None Include="Resources\İlişik Kesme - Kayıt Silme Talep Formu.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -263,10 +320,42 @@
     <Content Include="Web\Web\src\scss\_variables.scss" />
     <Content Include="Views\Shared\AdminLayout.cshtml" />
     <Content Include="Views\AnaSayfa\Index.cshtml" />
+    <Content Include="Views\Haberler\Index.cshtml" />
+    <Content Include="Views\KulübTanıtım\Index.cshtml" />
+    <Content Include="Views\KulübTanıtım\Erasmus.cshtml" />
+    <Content Include="Views\KulübTanıtım\Kizilay.cshtml" />
+    <Content Include="Views\KulübTanıtım\afad.cshtml" />
+    <Content Include="Views\KulübTanıtım\Espor.cshtml" />
+    <Content Include="Views\KulübTanıtım\Gezi.cshtml" />
+    <Content Include="Views\PuanveÜcret\Index.cshtml" />
+    <Content Include="Views\DersProğramı\Index.cshtml" />
+    <Content Include="Views\DersProğramı\Temelİngilizce.cshtml" />
+    <Content Include="Views\DersProğramı\AlgoritmayaGiris.cshtml" />
+    <Content Include="Views\DersProğramı\TemelOfisUyg.cshtml" />
+    <Content Include="Views\DersProğramı\BilgiTeknolojileri.cshtml" />
+    <Content Include="Views\DersProğramı\TemelMatematik.cshtml" />
+    <Content Include="Views\DersProğramı\Atatürkİnkilap.cshtml" />
+    <Content Include="Views\DersProğramı\BilgisayarDonanımı.cshtml" />
+    <Content Include="Views\DersProğramı\CPROGRAM.cshtml" />
+    <Content Include="Views\DersProğramı\VeriTabanı.cshtml" />
+    <Content Include="Views\DersProğramı\HtmlProgramlama.cshtml" />
+    <Content Include="Views\DersProğramı\İşletme.cshtml" />
+    <Content Include="Views\DersProğramı\MikroEkonomi.cshtml" />
+    <Content Include="Views\DersProğramı\DışTicaret.cshtml" />
+    <Content Include="Views\DersProğramı\GenelMuhasebe.cshtml" />
+    <Content Include="Views\DersProğramı\DısticaretBelge.cshtml" />
+    <Content Include="Views\DersProğramı\MakroEkonomi.cshtml" />
+    <Content Include="Views\DersProğramı\TemelProgramlama.cshtml" />
+    <Content Include="Views\DersProğramı\İsletimSistemiGüvenliği.cshtml" />
+    <Content Include="Views\DersProğramı\BilisimVeAg.cshtml" />
+    <Content Include="Views\Dilekçeler\Index.cshtml" />
+    <Content Include="Views\Formlar\Index.cshtml" />
+    <Content Include="Views\DersProğramı\İletişimBecerileri.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\PuanveÜcret\dosyalar\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -294,6 +383,12 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dosyalar\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
